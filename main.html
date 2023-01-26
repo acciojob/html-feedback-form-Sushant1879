@@ -8,21 +8,18 @@
 
 <body>
   <!-- the entire body must be written by student -->
-  <h1>Feedback Form</h1>
-  <div class="main">
-    <form>
-      <div>
-        <label for="name">Name :</label>
-        <input type="text" id="name" minlength="3" maxlength="50" min="3" max="50">
-      </div>
-      <div>
-        <label for="portfolio">Portfolio :</label>
-        <input type="text" id="portfolio" minlength="3" maxlength="50" min="3" max="50">
-      </div>
-      <div>
-        <label for="">favorite Color :</label>
-        <select name="favorite Color" id="favColor">
-          <option value="none" minimum aria-valuemin="1" ma>Select Color</option>
+  
+    <form method="post">
+      <h1>Feedback Form</h1>
+        <label for="name">Name</label>
+        <input type="text" id="name" minlength="3" maxlength="50">
+        <br>
+        <label for="portfolio">Portfolio</label>
+        <input type="url" id="portfolio">
+        <br>
+        <label for="favColor">favorite Color :</label>
+        <select name="favColor" id="favColor">
+          <option value="none">Select Color</option>
           <option value="black">Black</option>
           <option value="red">Red</option>
           <option value="green">Green</option>
@@ -30,11 +27,11 @@
           <option value="white">White</option>
           <option value="yellow">Yellow</option>
         </select>
-      </div>
-      <div>
-            <label for="">likeness :</label>
-            <input type="range" min="1" max="100" value="50" id="favColor">
-          </div>
+        <br>
+       <label for="likeness">likeness</label>
+            <input type="range" id="likeness" minlength="1" maxlength="100" value="50">
+          <br>
+          <input type="submit" value="submit">
     </form>
   </div>
 </body>
